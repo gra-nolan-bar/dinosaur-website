@@ -3,11 +3,7 @@
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <h1>Welcome to the Dinosaurs Home Page</h1>
 </template>
 
 <style scoped></style>
