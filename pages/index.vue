@@ -1,9 +1,11 @@
 <script setup>
-
 </script>
 
 <template>
-  <h1>Welcome to the Dinosaurs Home Page</h1>
+  <div>
+    <h1 class="bg-success text-white">Welcome to the Dinosaurs Home Page</h1>
+    <button class="btn btn-primary">Test Bootstrap Button</button>
+  </div>
 </template>
 
 <style scoped></style>

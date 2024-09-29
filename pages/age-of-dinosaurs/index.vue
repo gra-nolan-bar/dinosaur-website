@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>
+  <h1 class="bg-success">
     Welcome to the Age of Dinosaurs Page
   </h1>
 </template>
