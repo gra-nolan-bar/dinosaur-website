@@ -31,8 +31,9 @@ function shuffleArray(arr) {
 </script>
 
 <template>
+  
   <h1>Welcome to the Species of Dinosaur Page</h1>
-  <h2>Here are 3 random dinosaurs</h2>
+  <h2>Here are 3 random dinosaur facts</h2>
   <ul>
     <li v-for="(dino, index) in dinosaurs" :key="index">
       <Card 
