@@ -46,13 +46,14 @@
     <div class="flex-grow-1">
       <slot />
     </div>
-    <footer class="bg-success text-white mt-5">
-      <div class="container py-3 d-flex justify-content-between align-items-center">
-        <img src="../assets/pterodactyl.svg" alt="Brand Logo" width="50" height="50" class="d-inline-block align-text-top" />
-        <span>&copy; 2024 Dinosaurs. All rights reserved.</span>
-      </div>
-    </footer>
-  </div>
+      <footer class="bg-success text-white mt-5">
+        <div class="container py-3 d-flex justify-content-between align-items-center">
+          <img src="../assets/pterodactyl.svg" alt="Brand Logo" width="50" height="50" class="d-inline-block align-text-top" />
+          <p class="">created by gra-nolan-bar</p>
+          <span>&copy; 2024 Dinosaurs. All rights reserved.</span>
+        </div>
+      </footer>
+    </div>
 </template>
 
 <style scoped>
