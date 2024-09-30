@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <main class="container mt-4 flex-grow-1">
+  <main class="container mt-4">
     <div class="accordion" id="accordionExample">
       <section
         v-for="(section, index) in sections"
