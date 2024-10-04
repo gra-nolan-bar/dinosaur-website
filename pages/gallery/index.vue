@@ -28,20 +28,16 @@ const images = [
     alt: "A skull of the famous three-horned dino",
   },
   {
-    src: "/images/asteroid-1280.jpg",
-    alt: "Masosaurus swimming underwater",
-  },
-  {
-    src: "/images/baryonyx.jpg",
-    alt: "Baryonyx, a fish-eating dinosaur",
-  },
-  {
     src: "/images/thalassodromeus.jpg",
     alt: "Thalassodromeus, a pterosaur with a long crest",
   },
   {
     src: "/images/stegosaurus.jpg",
     alt: "Stegosaurus, known for its bony plates and spikes",
+  },
+  {
+    src: "/images/asteroid-1280.jpg",
+    alt: "Masosaurus swimming underwater",
   }
 ];
 // control the modal visibility and selected image
