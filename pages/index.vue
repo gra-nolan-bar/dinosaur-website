@@ -1,4 +1,50 @@
-<script setup></script>
+<!-- <script setup lang="ts">
+import { definePageMeta } from 'nuxt/app';
+
+definePageMeta({
+  title: 'Home - Dinosaur Website',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'This is the homepage of the Dinosaur Website, where you can find interesting dinosaur facts and images.'
+    },
+    {
+      hid: 'keywords',
+      name: 'keywords',
+      content: 'dinosaurs, homepage, dinosaur facts'
+    }
+  ]
+});
+</script> -->
+<script>
+export default {
+  data() {
+    return {
+      title: 'Home - Dinosaur Website',
+      description: 'This is the homepage of the Dinosaur Website, where you can find interesting dinosaur facts and images.'
+    };
+  },
+  head() {
+    return {
+      title: this.title, // using the title from data
+      meta: [
+        {
+          hid: 'description', 
+          name: 'description',
+          content: this.description 
+        },
+        {
+          hid: 'keywords', 
+          name: 'keywords',
+          content: 'dinosaurs, homepage, dinosaur facts'
+        }
+      ]
+    };
+  }
+};
+</script>
+
 
 <template>
   <div>
@@ -35,7 +81,13 @@
         expeditions to unearth new fossils, expanding our knowledge of these
         extraordinary animals. As research advances, we uncover more about their
         mysterious existence, ensuring that the legacy of dinosaurs will
-        continue to fascinate generations to come.
+        continue to fascinate generations to come. Get more amazing info from
+        the Smithsonian National Museum of Natural History in a new tab
+        <a
+          href="https://naturalhistory.si.edu/research/paleobiology"
+          target="_blank"
+          >here</a
+        >.
       </p>
       <div class="image-container">
         <img
@@ -51,7 +103,7 @@
 <style scoped>
 .image-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .small-image {
