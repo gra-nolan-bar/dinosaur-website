@@ -1,7 +1,38 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import SpeciesCard from "@/components/SpeciesCard.vue";
+import { useHead } from '@unhead/vue';
 
+useHead({
+  title: 'Species of Dinosaur - Dinosaur Website',
+  meta: [
+    {
+      key: 'description',
+      name: 'description',
+      content: 'Discover various dinosaur species, from the iconic Tyrannosaurus rex to the gentle Brachiosaurus. Explore detailed descriptions and fascinating facts about these magnificent creatures from the Mesozoic Era.'
+    },
+    {
+      key: 'keywords',
+      name: 'keywords',
+      content: 'dinosaur species, Triceratops, Tyrannosaurus rex, Brachiosaurus, prehistoric life, Mesozoic Era, dinosaur facts'
+    },
+    {
+      key: 'og:title',
+      property: 'og:title',
+      content: 'Species of Dinosaur - Dinosaur Website'
+    },
+    {
+      key: 'og:description',
+      property: 'og:description',
+      content: 'Explore an array of dinosaur species, learn about their characteristics, and uncover intriguing facts about these fascinating creatures that roamed the Earth millions of years ago.'
+    },
+    {
+      key: 'og:image',
+      property: 'og:image',
+      content: '/images/pterodactyl.svg' 
+    }
+  ]
+});
 const dinosaurs = ref([]);
 
 // Function to fetch random dinosaur facts from the API
@@ -46,7 +77,7 @@ const staticDinosaurs = [
   {
     name: "Tyrannosaurus Rex",
     description:
-      "Tyrannosaurus Rex, often abbreviated as T. rex, is one of the most famous dinosaurs. It lived during the late Cretaceous period and was a fierce predator. T. rex had large, serrated teeth and powerful jaws, which made it a top predator in its ecosystem. It could grow up to 12 meters in length and weigh up to 8 tons.",
+      "Tyrannosaurus Rex, often abbreviated as T. rex, is one of the most famous dinosaurs. It lived during the late Cretaceous period and was a fierce predator. T. rex had large, serrated teeth and powerful jaws, which made it a top predator in its ecosystem. It could grow up to 12 meters in length and weigh up to 8 tons. Learn more about Tyrannosaurus rex at the",
     imageSrc: "/images/tyrannosaurus-rex.jpg",
     imageAlt: "Tyrannosaurus Rex",
   },

@@ -1,50 +1,37 @@
-<!-- <script setup lang="ts">
-import { definePageMeta } from 'nuxt/app';
+<script setup>
+import { useHead } from '@unhead/vue'
 
-definePageMeta({
+useHead({
   title: 'Home - Dinosaur Website',
   meta: [
     {
-      hid: 'description',
+      key: 'description', // Acts similarly to hid, uniquely identifies this meta tag for Nuxt 3
       name: 'description',
-      content: 'This is the homepage of the Dinosaur Website, where you can find interesting dinosaur facts and images.'
+      content: 'Explore the fascinating world of dinosaurs! Learn about the diverse species that roamed the Earth during the Mesozoic Era, from the mighty T-Rex to the towering Brachiosaurus.'
     },
     {
-      hid: 'keywords',
+      key: 'keywords', 
       name: 'keywords',
-      content: 'dinosaurs, homepage, dinosaur facts'
+      content: 'dinosaurs, Mesozoic Era, Tyrannosaurus rex, Brachiosaurus, Velociraptor, dinosaur facts, prehistoric animals'
+    },
+    {
+      key: 'og:title', // Open Graph title for better social sharing
+      property: 'og:title',
+      content: 'Home - Dinosaur Website'
+    },
+    {
+      key: 'og:description', 
+      property: 'og:description',
+      content: 'Discover the incredible world of dinosaurs, from fearsome predators to gentle giants, and learn how these remarkable creatures adapted to rule the Earth for millions of years.'
+    },
+    {
+      key: 'og:image', // Open Graph image for social media preview
+      property: 'og:image',
+      content: '/images/pterodactyl.svg'
     }
   ]
 });
-</script> -->
-<script>
-export default {
-  data() {
-    return {
-      title: 'Home - Dinosaur Website',
-      description: 'This is the homepage of the Dinosaur Website, where you can find interesting dinosaur facts and images.'
-    };
-  },
-  head() {
-    return {
-      title: this.title, // using the title from data
-      meta: [
-        {
-          hid: 'description', 
-          name: 'description',
-          content: this.description 
-        },
-        {
-          hid: 'keywords', 
-          name: 'keywords',
-          content: 'dinosaurs, homepage, dinosaur facts'
-        }
-      ]
-    };
-  }
-};
 </script>
-
 
 <template>
   <div>
@@ -86,6 +73,7 @@ export default {
         <a
           href="https://naturalhistory.si.edu/research/paleobiology"
           target="_blank"
+          rel="noopener noreferrer"
           >here</a
         >.
       </p>

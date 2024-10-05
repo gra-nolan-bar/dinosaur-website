@@ -1,5 +1,37 @@
 <script setup>
 import AccordionDinos from "~/components/AccordionDinos.vue";
+import { useHead } from '@unhead/vue';
+
+useHead({
+  title: 'Age of Dinosaurs - Dinosaur Website',
+  meta: [
+    {
+      key: 'description',
+      name: 'description',
+      content: 'Explore the Age of Dinosaurs, spanning the Mesozoic Era including the Triassic, Jurassic, and Cretaceous periods. Learn about iconic dinosaurs, diverse ecosystems, and the dramatic end of this era.'
+    },
+    {
+      key: 'keywords',
+      name: 'keywords',
+      content: 'Mesozoic Era, Triassic Period, Jurassic Period, Cretaceous Period, dinosaurs, evolution, Tyrannosaurus rex, Triceratops, prehistoric life'
+    },
+    {
+      key: 'og:title',
+      property: 'og:title',
+      content: 'Age of Dinosaurs - Dinosaur Website'
+    },
+    {
+      key: 'og:description',
+      property: 'og:description',
+      content: 'Learn about the Age of Dinosaurs, from their rise in the Triassic Period to their diversification in the Jurassic and ultimate demise in the Cretaceous.'
+    },
+    {
+      key: 'og:image',
+      property: 'og:image',
+      content: '/images/pterodactyl.svg'
+    }
+  ]
+});
 
 const dinosaurData = [
   {
