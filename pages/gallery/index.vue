@@ -1,6 +1,38 @@
 <script setup>
 import { ref } from "vue";
 import ImageCard from "~/components/ImageCard.vue";
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Gallery - Dinosaur Website',
+  meta: [
+    {
+      key: 'description', // Acts similarly to hid, uniquely identifies this meta tag for Nuxt 3
+      name: 'description',
+      content: 'Explore the gallery of amazing dinosaur images, including various species such as the T-Rex, Pterosaur, and Stegosaurus. Dive into the prehistoric world with these fascinating visuals.'
+    },
+    {
+      key: 'keywords',
+      name: 'keywords',
+      content: 'dinosaur gallery, dinosaur images, T-Rex, Pterosaur, Stegosaurus, prehistoric animals, dinosaur pictures'
+    },
+    {
+      key: 'og:title', // open Graph title for better social sharing
+      property: 'og:title',
+      content: 'Gallery - Dinosaur Website'
+    },
+    {
+      key: 'og:description', // Open Graph description for better social sharing
+      property: 'og:description',
+      content: 'Discover the amazing gallery of dinosaur images featuring different species such as the T-Rex, Stegosaurus, and more. Get a glimpse into the prehistoric era!'
+    },
+    {
+      key: 'og:image', // Open Graph image
+      property: 'og:image',
+      content: '/images/pterodactyl.svg' // Example image for social media previews
+    }
+  ]
+});
 
 const images = [
   {
