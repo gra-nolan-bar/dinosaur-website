@@ -7,8 +7,8 @@ export default {
       title: 'Dinosaur Website',
       meta: [
         { hid: 'description', name: 'description', content: 'Explore the fascinating world of dinosaurs, their history, evolution, and diverse species. Discover engaging facts, captivating images, and insights into the Mesozoic Era, where these incredible reptiles ruled the Earth.' },
-        { hid: 'keywords', name: 'keywords', content: 'dinosaurs, Mesozoic Era, paleontology, dinosaur diversity, T. rex, Jurassic period, Cretaceous period, fossil discoveries, dinosaur adaptations, prehistoric reptiles' },
-        { hid: 'author', name: 'author', content: '@gra-nolan-bar' },
+        { hid: 'keywords', name: 'keywords', content: 'dinosaurs, Mesozoic Era, paleontology, dinosaur diversity, T. rex, Jurassic period, Cretaceous period, fossil discoveries, Nolan Miltko, prehistoric reptiles' },
+        { hid: 'author', name: 'author', content: '@gra-nolan-bar, Nolan Miltko' },
         { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'robots', name: 'robots', content: 'index, follow' },
         { hid: 'og:title', property: 'og:title', content: 'Dinosaur Website by gra-nolan-bar' },
